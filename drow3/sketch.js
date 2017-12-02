@@ -1,7 +1,8 @@
-var a = 20;
+var x = 0;
+var speed = 3;
 
 function setup() {
-	createCanvas(800, 600);
+	createCanvas(600, 400);
 }
 
 function draw() {
@@ -9,12 +10,10 @@ function draw() {
 	stroke(255);
 	strokeWeight(4);
 	noFill();
+	ellipse( x, 200, 100, 100);
 
-
-	ellipse( 300, 200, a, a);
-
-	if(mouseX > 100){
-		a = (mouseX - 5) ;
+	if (x > width) {
+		speed = -3;
 	}
-
+	x = x + speed;
 }
