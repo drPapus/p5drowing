@@ -1,0 +1,9 @@
+ .main{
+    margin:0 auto;
+    width: 80%;
+    height: 2000px;
+    background-color: rgba(106, 110, 106, 0.425);
+} 
+.main p {
+    font-size: 25px;
+}
